@@ -1,0 +1,97 @@
+.main-block__container {
+   padding-top: rem(60);
+   padding-bottom: rem(24);
+   display: flex;
+   flex-direction: column;
+
+   @media(min-width:$tablet) {
+      padding-top: rem(109);
+      flex-direction: row;
+      justify-content: space-between;
+   }
+
+   .main-block__content {
+      display: flex;
+      flex-direction: column;
+      padding-top: 5.469%;
+      margin-bottom: rem(22);
+      align-items: center;
+      text-align: center;
+
+      @media(min-width:$tablet) {
+         margin-bottom: 0;
+         margin-left: 3.125%;
+         text-align: start;
+         align-items: flex-start;
+      }
+
+      .main-block__title {
+         max-width: rem(467);
+         font-size: rem(35);
+         margin-bottom: rem(10);
+
+         @media(min-width:$mobile) {
+            font-size: rem(40);
+         }
+
+         @media(min-width:$tablet) {
+            margin-bottom: rem(20);
+            max-width: rem(380);
+         }
+
+         @media(min-width:1090px) {
+            font-size: rem(50);
+         }
+      }
+
+      .main-block__text {
+         color: $mainFontColorBlack70;
+         margin-bottom: rem(13);
+         line-height: 1.35;
+
+         @media(min-width:$tablet) {
+            max-width: rem(239);
+            margin-bottom: rem(21);
+         }
+      }
+
+      .main-block__button {
+         .button-main-block__link {
+            font-size: rem(17);
+            color: $mainFontColorWhite;
+
+            padding: rem(15) rem(32);
+            background-color: $mainFontColorBlue;
+            border-radius: rem(100);
+            box-shadow: 0 rem(4) rem(4) rgba(18, 23, 34, 0.01);
+            border: 1px solid $mainFontColorBlue;
+            max-width: rem(158);
+            max-height: rem(48);
+
+            &:hover {
+               color: $mainFontColorBlack;
+               background-color: $mainColorWhite;
+               border: 1px solid $mainFontColorBlack;
+            }
+         }
+      }
+   }
+
+   .main-block__img-box {
+      flex: 1 1 100%;
+
+      @media(min-width:$tablet) {
+         margin-right: 4.219%;
+         flex: 0 1 58.125%;
+         align-self: flex-end;
+      }
+
+      .main-block__image {
+         padding: 0px 0px 63.038% 0px;
+
+         @media(min-width: 1090px) {
+            max-width: rem(690);
+         }
+      }
+   }
+}

@@ -18,7 +18,7 @@ $mainColorGrey5: rgba(0, 0, 0, 0.05);
 $mainFontColorBlack: #121722;
 $mainFontColorBlack70: rgba(18, 23, 34, 0.7);
 $mainFontColorBlue: #4058FF;
-
+$mainFontColorWhite: #FFFFFF;
 
 //______________REM-FUNCTION_________
 $htmlFontSize: 16px;
@@ -56,6 +56,7 @@ body {
          left: 0;
          top: 0;
          z-index: 10;
+         border-bottom: rem(1) solid $mainColorGrey5;
       }
 
       .page {
@@ -73,19 +74,18 @@ body {
 }
 
 //_________________images______
-/*._ibg {
+._ibg {
    position: relative;
-}
 
-._ibg img {
-   position: absolute;
-   width: 100%;
-   height: 100%;
-   top: 0;
-   left: 0;
-   object-fit: cover;
+   & img {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      object-fit: cover;
+   }
 }
-*/
 
 //_________________button______
 ._button {
@@ -100,3 +100,4 @@ body {
 }
 
 @import"./_header";
+@import"./_main-block";
