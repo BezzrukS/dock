@@ -1,0 +1,9 @@
+.uplevel__body {
+   padding-top: rem(60);
+   padding-bottom: rem(36);
+
+   @media(min-width:$mobile) {
+      padding-top: rem(78.81);
+      padding-bottom: rem(48.19);
+   }
+}
