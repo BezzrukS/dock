@@ -32,6 +32,7 @@
 
          @media(min-width:$mobile) {
             font-size: rem(40);
+            margin-bottom: rem(15);
          }
 
          @media(min-width:$tablet) {
@@ -49,6 +50,11 @@
          margin-bottom: rem(13);
          line-height: 1.35;
 
+         @media(min-width:$mobile) {
+            max-width: rem(239);
+            margin-bottom: rem(17);
+         }
+
          @media(min-width:$tablet) {
             max-width: rem(239);
             margin-bottom: rem(21);
@@ -58,7 +64,7 @@
       .main-block__button {
          .button-main-block__link {
             font-size: rem(17);
-            color: $mainFontColorWhite;
+            color: $mainColorWhite;
 
             padding: rem(15) rem(32);
             background-color: $mainFontColorBlue;
@@ -81,13 +87,14 @@
       flex: 1 1 100%;
 
       @media(min-width:$tablet) {
-         margin-right: 4.219%;
+
          flex: 0 1 58.125%;
          align-self: flex-end;
       }
 
       .main-block__image {
-         padding: 0px 0px 63.038% 0px;
+         padding: 0 0 63.038%;
+         margin-right: 7.259%;
 
          @media(min-width: 1090px) {
             max-width: rem(690);

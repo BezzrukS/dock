@@ -1,0 +1,130 @@
+.meeting-point__body {
+   background-color: $mainFontColorBlue;
+   border-radius: rem(16);
+   padding-top: rem(40);
+   padding-bottom: rem(40);
+
+   @media(min-width:$mobile) {
+      padding-top: rem(60);
+      padding-bottom: rem(60);
+   }
+
+   @media(min-width:$tablet) {
+      padding-top: rem(98);
+      padding-bottom: rem(98);
+      display: flex;
+      justify-content: space-between;
+   }
+}
+
+.meeting-point__content {
+   text-align: center;
+   padding: 0 rem(5);
+
+   @media(min-width:$tablet) {
+      text-align: start;
+      margin-left: 3.75%;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      margin-right: rem(10);
+   }
+
+   .meeting-point__title {
+      color: $mainColorWhite;
+      font-size: rem(26);
+      line-height: 1.12;
+      margin-bottom: rem(20);
+
+      @media(min-width:$mobile) {
+         font-size: rem(30);
+      }
+
+      @media(min-width:$tablet) {
+         max-width: rem(354);
+      }
+
+      @media(min-width: 1090px) {
+         font-size: rem(34);
+      }
+   }
+
+   .meeting-point__text {
+      color: $FontColorWhite;
+      line-height: 1.45;
+      font-size: rem(16);
+      margin-bottom: rem(32);
+
+      @media(min-width:$mobile) {
+         margin-bottom: rem(39);
+      }
+
+      @media(min-width:$tablet) {
+         max-width: rem(306);
+         margin-bottom: rem(46);
+         font-size: rem(18);
+      }
+
+      @media(min-width: 1090px) {
+         font-size: rem(20);
+      }
+   }
+
+   .meeting-point__software {
+      padding-top: rem(19);
+      border-top: 1px solid $ColorBlue;
+
+      .software-meeting-point__text {
+         color: $FontColorWhite;
+         line-height: 1.45;
+         margin-bottom: rem(14);
+         font-size: rem(16);
+
+         @media(min-width:$tablet) {
+            max-width: rem(282);
+            font-size: rem(18);
+         }
+
+         @media(min-width: 1090px) {
+            font-size: rem(20);
+         }
+      }
+
+      .software-meeting-point__image {
+         margin-bottom: rem(20);
+
+         @media(min-width:$tablet) {
+            margin-bottom: 0;
+         }
+      }
+   }
+}
+
+.meeting-point__image-box {
+   padding: 0 rem(5);
+
+   @media(min-width:$tablet) {
+      padding: 0;
+      flex: 0 1 61.484%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+   }
+
+   .meeting-point__image {
+      display: block;
+      padding: 0 0 65%;
+      border-radius: rem(7);
+      box-shadow: rem(2) rem(2) rem(1) rgba(39, 6, 250, 0.5);
+      overflow: hidden;
+
+      @media(min-width: $tablet) {
+         padding: 0 0 61.756%;
+         margin-right: 5.21%;
+      }
+
+      @media(min-width: 1090px) {
+         max-width: rem(746);
+      }
+   }
+}

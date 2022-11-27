@@ -1,0 +1,101 @@
+.spreadsheet__container {
+   padding-top: rem(24);
+   padding-bottom: rem(24);
+}
+
+.spreadsheet__body {
+   padding-top: rem(40);
+   padding-bottom: rem(30);
+   background-color: $ColorWhite50;
+   border-radius: rem(16);
+
+   @media(min-width: $mobile) {
+      padding-top: rem(60);
+      padding-bottom: rem(38);
+   }
+
+   @media(min-width: $tablet) {
+      padding-top: rem(80);
+      padding-bottom: rem(48);
+      display: flex;
+      justify-content: space-between;
+   }
+
+   .spreadsheet__content {
+      text-align: center;
+      padding: 0 rem(5);
+      margin-right: 3.75%;
+
+      @media(min-width: $tablet) {
+         text-align: start;
+         order: 2;
+         padding: 0;
+         margin-left: rem(20);
+         max-width: rem(343);
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+      }
+
+      .spreadsheet__title {
+         font-size: rem(26);
+         line-height: 1.12;
+         margin-bottom: rem(20);
+
+         @media(min-width: $mobile) {
+            font-size: rem(30);
+         }
+
+         @media(min-width: $tablet) {
+            max-width: rem(283);
+         }
+
+         @media(min-width: 1090px) {
+            font-size: rem(34);
+         }
+      }
+
+      .spreadsheet__text {
+         color: $mainFontColorBlack70;
+         line-height: 1.45;
+         font-size: rem(16);
+         margin-bottom: rem(20);
+
+         @media(min-width: $tablet) {
+            max-width: rem(337);
+            font-size: rem(18);
+            margin-bottom: 0;
+         }
+
+         @media(min-width: 1090px) {
+            font-size: rem(20);
+         }
+      }
+   }
+
+   .spreadsheet__image-box {
+      padding: 0 rem(5);
+
+      @media(min-width: $tablet) {
+         display: flex;
+         flex-direction: column;
+         flex: 0 1 63.438%;
+         order: 1;
+         padding: 0;
+      }
+
+      .spreadsheet__image {
+         display: block;
+         overflow: hidden;
+         border-radius: rem(7);
+         box-shadow: rem(2) rem(2) rem(1) rgba(199, 199, 199, 0.5);
+         padding: 0 0 60%;
+
+         @media(min-width: $tablet) {
+            margin-left: 8.005%;
+         }
+
+      }
+   }
+
+}

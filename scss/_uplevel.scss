@@ -1,8 +1,13 @@
 .uplevel__body {
-   padding-top: rem(60);
-   padding-bottom: rem(36);
+   padding-top: rem(58);
+   padding-bottom: rem(28);
 
    @media(min-width:$mobile) {
+      padding-top: rem(68.81);
+      padding-bottom: rem(38.19);
+   }
+
+   @media(min-width:$tablet) {
       padding-top: rem(78.81);
       padding-bottom: rem(48.19);
    }

@@ -1,0 +1,80 @@
+.understand-what__body {
+   padding-top: rem(40);
+   padding-bottom: rem(40);
+   background-color: $mainColorDarkBlue;
+   border-radius: rem(16);
+
+   @media(min-width:$mobile) {
+      padding-top: rem(60);
+      padding-bottom: rem(60);
+   }
+
+   @media(min-width:$tablet) {
+      padding-top: rem(80);
+      padding-bottom: rem(80);
+      display: flex;
+      justify-content: space-between;
+   }
+
+   .understand-what__content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      padding: 0 rem(5);
+
+      @media(min-width:$tablet) {
+         text-align: start;
+         margin-left: 3.75%;
+         padding: 0;
+         margin-right: rem(10);
+      }
+
+      .understand-what__title {
+         font-size: rem(26);
+         line-height: 1.12;
+         color: $mainColorWhite;
+         margin-bottom: rem(20);
+
+         @media(min-width:$mobile) {
+            font-size: rem(30);
+         }
+
+         @media(min-width:$tablet) {
+            max-width: rem(299);
+         }
+
+         @media(min-width: 1090px) {
+            font-size: rem(34);
+         }
+      }
+
+      .understand-what__text {
+         line-height: 1.45;
+         font-size: rem(16);
+         color: $FontColorGrey;
+         margin-bottom: rem(20);
+
+         @media(min-width:$tablet) {
+            max-width: rem(299);
+            font-size: rem(18);
+         }
+
+         @media(min-width: 1090px) {
+            font-size: rem(20);
+         }
+      }
+   }
+
+   .understand-what__image-box {
+      flex: 0 1 62.89%;
+
+      .understand-what__image {
+         padding-bottom: 65%;
+
+         @media(min-width:$tablet) {
+            margin-right: 2.858%;
+         }
+      }
+   }
+}
