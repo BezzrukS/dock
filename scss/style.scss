@@ -18,6 +18,7 @@ $ColorWhite50: rgba(241, 245, 255, 0.5);
 $mainColorPink50: rgba(255, 244, 245, 0.5);
 $mainColorYellow50: rgba(255, 246, 228, 0.5);
 $mainColorDarkBlue: #121722;
+$mainColorGrey50: #F1F5FF;
 
 //_______font-colors_____
 $mainFontColorBlack: #121722;
@@ -154,8 +155,10 @@ body {
 @import"./_header";
 @import"./_main-block";
 @import"./_experience";
-@import"./_meeting_point";
+@import"./_meeting-point";
 @import"./_spreadsheet";
 @import"./_personalization";
 @import"./_uplevel";
 @import"./_understand-what";
+@import"./_save-time";
+@import"./_dock-helps";

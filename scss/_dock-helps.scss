@@ -1,0 +1,30 @@
+.dock-helps {}
+
+.dock-helps__container {}
+
+.dock-helps__body {
+   padding: rem(80);
+}
+
+.dock-helps__row {
+   display: flex;
+   gap: rem(39);
+}
+
+.dock-helps__column {
+   flex: 0 1 33.333%;
+}
+
+.column-dock-helps {}
+
+.column-dock-helps__title {}
+
+.column-dock-helps__text {}
+
+.helps-blue {}
+
+.column-dock-helps__label {}
+
+.column-dock-helps__image {}
+
+.column-dock-helps__link {}
