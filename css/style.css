@@ -1101,14 +1101,60 @@ body .wrapper .page {
 }
 
 .dock-helps__body {
-  padding: 5rem;
+  padding: 5rem 6.25%;
+  border-radius: 1rem;
+  background-color: rgba(241, 245, 255, 0.5);
 }
-
-.dock-helps__row {
+.dock-helps__body .dock-helps__row {
   display: flex;
-  gap: 2.4375rem;
+  gap: 3.527%;
 }
-
-.dock-helps__column {
+.dock-helps__body .dock-helps__row .dock-helps__column {
   flex: 0 1 33.333%;
+  border-radius: 1rem;
+}
+.dock-helps__body .dock-helps__row .dock-helps__column .column-dock-helps__title {
+  color: #121722;
+  font-size: 2.125rem;
+  line-height: 1.12;
+  margin-bottom: 1.25rem;
+}
+.dock-helps__body .dock-helps__row .dock-helps__column .column-dock-helps__text {
+  color: rgba(18, 23, 34, 0.7);
+  line-height: 1.45;
+}
+.dock-helps__body .dock-helps__row .helps-blue {
+  background-color: #4058FF;
+}
+.dock-helps__body .dock-helps__row .helps-blue .column-dock-helps__content {
+  padding: 2rem 2.5625rem 4.375rem 2rem;
+}
+.dock-helps__body .dock-helps__row .helps-blue .column-dock-helps__content .column-dock-helps__image {
+  margin-bottom: 2rem;
+}
+.dock-helps__body .dock-helps__row .helps-blue .column-dock-helps__content .column-dock-helps__label {
+  color: #FFFFFF;
+  font-size: 0.8125rem;
+  margin-bottom: 0.125rem;
+  line-height: 1.5;
+  letter-spacing: 0.03125rem;
+}
+.dock-helps__body .dock-helps__row .helps-blue .column-dock-helps__content .column-dock-helps__title {
+  font-size: 2rem;
+  color: #FFFFFF;
+  line-height: 1.125;
+  margin-bottom: 0.8125rem;
+  max-width: 15rem;
+}
+.dock-helps__body .dock-helps__row .helps-blue .column-dock-helps__content .column-dock-helps__text {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 1.125rem;
+  line-height: 1.3;
+  margin-bottom: 0.9375rem;
+  max-width: 17.125rem;
+}
+.dock-helps__body .dock-helps__row .helps-blue .column-dock-helps__content .column-dock-helps__link {
+  color: #FFFFFF;
+  font-size: 1rem;
+  line-height: 1.625;
 }

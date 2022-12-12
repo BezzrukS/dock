@@ -1,30 +1,69 @@
-.dock-helps {}
-
-.dock-helps__container {}
-
 .dock-helps__body {
-   padding: rem(80);
+   padding: rem(80) 6.25%;
+   border-radius: rem(16);
+   background-color: $ColorWhite50;
+
+   .dock-helps__row {
+      display: flex;
+      gap: 3.527%;
+
+      .dock-helps__column {
+         flex: 0 1 33.333%;
+         border-radius: rem(16);
+
+         .column-dock-helps__title {
+            color: $mainFontColorBlack;
+            font-size: rem(34);
+            line-height: 1.12;
+            margin-bottom: rem(20);
+         }
+
+         .column-dock-helps__text {
+            color: $mainFontColorBlack70;
+            line-height: 1.45;
+         }
+      }
+
+      .helps-blue {
+         background-color: $mainFontColorBlue;
+
+         .column-dock-helps__content {
+            padding: rem(32) rem(41) rem(70) rem(32);
+
+            .column-dock-helps__image {
+               margin-bottom: rem(32);
+            }
+
+            .column-dock-helps__label {
+               color: $mainColorWhite;
+               font-size: rem(13);
+               margin-bottom: rem(2);
+               line-height: 1.5;
+               letter-spacing: rem(0.5);
+            }
+
+            .column-dock-helps__title {
+               font-size: rem(32);
+               color: $mainColorWhite;
+               line-height: 1.125;
+               margin-bottom: rem(13);
+               max-width: rem(240);
+            }
+
+            .column-dock-helps__text {
+               color: $FontColorWhite90;
+               font-size: rem(18);
+               line-height: 1.3;
+               margin-bottom: rem(15);
+               max-width: rem(274);
+            }
+
+            .column-dock-helps__link {
+               color: $mainColorWhite;
+               font-size: rem(16);
+               line-height: 1.625;
+            }
+         }
+      }
+   }
 }
-
-.dock-helps__row {
-   display: flex;
-   gap: rem(39);
-}
-
-.dock-helps__column {
-   flex: 0 1 33.333%;
-}
-
-.column-dock-helps {}
-
-.column-dock-helps__title {}
-
-.column-dock-helps__text {}
-
-.helps-blue {}
-
-.column-dock-helps__label {}
-
-.column-dock-helps__image {}
-
-.column-dock-helps__link {}
